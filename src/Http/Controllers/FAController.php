@@ -40,7 +40,7 @@ class FAController extends Controller
                 'date_from' => $interval,
                 'filters' => config('fa.fa_hostname')
                     ? '[{"property":"hostname","operator":"is","value":"' . config('fa.fa_hostname') . '"}]'
-                    : '',
+                    : '[]',
             ])
             ->collect());
 
